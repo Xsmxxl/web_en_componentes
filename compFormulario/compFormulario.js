@@ -27,6 +27,18 @@ var compFormulario = {
               alert("favor de llenar los campos requeridos");
             }
         };
+        btn.ontouchstart = ()=>{
+            nomb = document.getElementById('nombre').value;
+            var ed = document.getElementById('edad').value;
+            // console.log(nomb+" "+ed);
+            if(nomb != "" && ed !=""){
+              compMostrar(nomb, ed);
+              document.getElementById('nombre').value = "";
+              document.getElementById('edad').value = "";
+            }else{
+              alert("favor de llenar los campos requeridos");
+            }
+        };
       }
     }
 }
