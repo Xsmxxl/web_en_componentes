@@ -12,10 +12,10 @@ var compFormulario = {
       dondeInsertar.append(div);
       incluye();
     },
-    cliquear: async function(){
+    cliquear: function(){
       //window.onload = function(){
-        var btn = await document.getElementById('btn');
-        await btn.onclick = ()=>{
+        var btn = document.getElementById('btn');
+        btn.onclick = ()=>{
             nomb = document.getElementById('nombre').value;
             var ed = document.getElementById('edad').value;
             // console.log(nomb+" "+ed);
