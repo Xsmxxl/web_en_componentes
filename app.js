@@ -8,5 +8,4 @@ import { compFormulario } from './compFormulario/compFormulario.js';
 // console.log(graph.options.color);
 
 compTitulo("titulo", "titulo");
-compFormulario.crear();
-compFormulario.cliquear();
+compFormulario();

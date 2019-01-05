@@ -1,5 +1,5 @@
 import { w3 } from '.././w3.js';
-// import { recuperar } from '.././compFormulario/compFormulario.js';
+// import { nomb } from '.././compFormulario/compFormulario.js';
 
 var compTitulo = (titulo, id)=>{
     var myObject= { 'id' : id, 'titulo' : titulo };
@@ -15,7 +15,11 @@ var compTitulo = (titulo, id)=>{
 
     w3.includeHTML(()=>{
       w3.displayObject("Div1", myObject);
+      // aquí va todo el código callback
+      // var prueba = nomb || "aún no se recive la variable";
+      // console.log("titulo arrancando: " + prueba);
     });
 }
+
 
 export { compTitulo };
