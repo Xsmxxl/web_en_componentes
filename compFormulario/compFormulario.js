@@ -12,10 +12,10 @@ var compFormulario = {
       dondeInsertar.append(div);
       incluye();
     },
-    cliquear: function(){
-      window.onload = function(){
-        var btn = document.getElementById('btn');
-        btn.onclick = ()=>{
+    cliquear: async function(){
+      //window.onload = function(){
+        var btn = await document.getElementById('btn');
+        await btn.onclick = ()=>{
             nomb = document.getElementById('nombre').value;
             var ed = document.getElementById('edad').value;
             // console.log(nomb+" "+ed);
@@ -26,7 +26,7 @@ var compFormulario = {
             }else{
               alert("favor de llenar los campos requeridos");
             }
-        };
+        //};
         btn.ontouchstart = ()=>{
             nomb = document.getElementById('nombre').value;
             var ed = document.getElementById('edad').value;
